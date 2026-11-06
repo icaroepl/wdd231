@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Icaro Lima Homepage</title>
+    <meta name="author" content="Icaro Lima">
+    <meta name="description" content="WDD 231 Student Homepage">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
+        <span>Icaro Lima</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>Placeholder Text</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.svg" alt="Student Profile" class="student-img">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div>
+                <button type="button">All</button>
+                <button type="button">CSE</button>
+                <button type="button">WDD</button>
+            </div>
+            <p> The total credits for courses listed above is 6</p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/icaroepl" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/icaro-lima-82928239a/" target="_blank"><img
+                        src="images/linkedin.svg" alt="Linkedin"></a></li>
+        </ul>
+        <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
