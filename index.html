@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Icaro Lima Homepage</title>
     <meta name="author" content="Icaro Lima">
-    <meta name="description" content="WDD 231 Student Homepage">
+    <meta name="description"
+        content="WDD 231 Student Homepage with student credits, courses completed and student profile picture">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
         <img src="images/logo.svg" alt="Site Logo" width="512" height="512">
         <span>Icaro Lima</span>
         <button id="ham-btn" class="hamburger"></button>
-        <nav>
+        <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="chamber.html">Chamber</a></li>
@@ -29,15 +31,37 @@
     </header>
     <main>
         <h1>Home</h1>
-        <section>
-            <h2>About Me</h2>
-            <p>Placeholder Text</p>
-        </section>
-        <section>
-            <h2>Student Photo</h2>
-            <img src="images/profile.svg" alt="Student Profile" class="student-img">
-        </section>
-        <section>
+        <div class="middle">
+            <section>
+                <h2>About Me</h2>
+                <p>
+                    I'm Icaro, an independent game developer with professional experience in Unity since 2021. I
+                    specialize in gameplay programming, 2D game development, and creating engaging interactive
+                    experiences, combining technical skills with creativity to bring game concepts to life.
+
+                    Throughout my career, I've developed and published games on platforms such as CrazyGames and
+                    GamePix, as well as collaborated with international clients on game development projects. My
+                    experience covers a wide range of tasks, including gameplay mechanics, user interface
+                    implementation, animations, particle effects, level design, bug fixing, and performance
+                    optimization.
+
+                    I enjoy working on projects from initial concepts to finished products, focusing on creating smooth
+                    gameplay, intuitive mechanics, and enjoyable player experiences. I'm also comfortable adapting to
+                    different project requirements, working independently, solving technical challenges, and
+                    communicating with clients to ensure their expectations are met.
+
+                    I have C2-level English proficiency, certified by Pearson Versant, and regularly communicate with
+                    international clients and professionals in English. This allows me to collaborate effectively with
+                    people from different backgrounds and contribute confidently to international development teams.
+
+                </p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student Profile" class="student-img">
+            </section>
+        </div>
+        <section class="lower-section">
             <h2>Web Certificate Courses</h2>
             <div>
                 <button type="button">All</button>
@@ -46,6 +70,7 @@
             </div>
             <p> The total credits for courses listed above is 6</p>
         </section>
+
     </main>
     <footer>
         <ul>
@@ -54,8 +79,10 @@
             <li><a href="https://www.linkedin.com/in/icaro-lima-82928239a/" target="_blank"><img
                         src="images/linkedin.svg" alt="Linkedin"></a></li>
         </ul>
-        <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
-        <p id="lastModified"></p>
+        <div class="footer-content">
+            <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 

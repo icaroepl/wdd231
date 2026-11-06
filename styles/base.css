@@ -5,3 +5,145 @@ Blue #3D405B */
     font-family: Josefin Sans, sans-serif;
     box-sizing: border-box;
 }
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* Ajusta as colunas para o logo, nome e o hambúrguer */
+    align-items: center;
+    padding: 10px 0;
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    grid-column: 1 / -1;
+    width: 100%;
+    background-color: #3D405B;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #fff;
+    /* Altera para branco para destacar no fundo escuro */
+    text-decoration: none;
+}
+
+.navigation li.current {
+    background-color: #555;
+    /* Tom adaptado para o fundo escuro */
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+    /* Cor terracotta no hover */
+    color: #fff;
+}
+
+
+/* HAMBURGER */
+
+/* Hamburger Navigation */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* MAIN */
+h1 {
+    margin: 0 auto;
+}
+
+.middle {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+h2 {
+    background-color: #3D405B;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    font-size: large;
+}
+
+.middle img {
+    width: 80%;
+}
+
+/* LOWER PART */
+
+.lower-section {
+    text-align: center;
+}
+
+section div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
+
+section div button {
+    padding: 7px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 25%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+footer ul li img {
+    width: 50px;
+}
+
+.footer-content {
+    background-color: #3D405B;
+    padding: 10px;
+    color: white;
+}
