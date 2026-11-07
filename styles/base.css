@@ -10,7 +10,6 @@ Blue #3D405B */
 header {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    /* Ajusta as colunas para o logo, nome e o hambúrguer */
     align-items: center;
     padding: 10px 0;
     column-gap: 10px;
@@ -41,24 +40,22 @@ header span {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
 
 .navigation a {
     display: block;
     padding: .8rem 10px;
     color: #fff;
-    /* Altera para branco para destacar no fundo escuro */
     text-decoration: none;
 }
 
 .navigation li.current {
     background-color: #555;
-    /* Tom adaptado para o fundo escuro */
 }
 
 .navigation a:hover {
     background-color: #E07A5F;
-    /* Cor terracotta no hover */
     color: #fff;
 }
 
@@ -92,6 +89,19 @@ h1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle section {
+    background-color: #e4e4e4;
+}
+
+.middle section h2 {
+    margin: 0 auto;
 }
 
 h2 {
@@ -102,8 +112,16 @@ h2 {
     font-size: large;
 }
 
+.profile {
+    text-align: center;
+}
+
 .middle img {
     width: 80%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 /* LOWER PART */
@@ -123,8 +141,24 @@ section div button {
     padding: 7px;
 }
 
-/* FOOTER */
+.courses-grid {
+    margin-top: 15px;
+    background-color: #e4e4e4;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
 
+.course-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
 }

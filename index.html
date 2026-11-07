@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -56,7 +58,7 @@
 
                 </p>
             </section>
-            <section>
+            <section class="profile">
                 <h2>Student Photo</h2>
                 <img src="images/profile.webp" alt="Student Profile" class="student-img">
             </section>
@@ -64,11 +66,12 @@
         <section class="lower-section">
             <h2>Web Certificate Courses</h2>
             <div>
-                <button type="button">All</button>
-                <button type="button">CSE</button>
-                <button type="button">WDD</button>
+                <button id="all" type="button">All</button>
+                <button id="cse" type="button">CSE</button>
+                <button id="wdd" type="button">WDD</button>
             </div>
-            <p> The total credits for courses listed above is 6</p>
+            <div id="courses-container" class="courses-grid"></div>
+            <p> The total credits for courses listed above is <span id="credits"></span></p>
         </section>
 
     </main>
@@ -81,7 +84,7 @@
         </ul>
         <div class="footer-content">
             <p class="last-text">©<span id="currentyear"></span> 💻 Icaro Emanuel Pereira Lima Brazil 💻</p>
-            <p id="lastModified"></p>
+            <p id="lastmodified"></p>
         </div>
     </footer>
 </body>
