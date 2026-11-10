@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: rgba(38, 58, 88, 0.986);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(38, 58, 88, 0.986);
+    border: 2px rgb(65, 65, 65) solid;
+    text-align: center;
+}
+
+section p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+
+}

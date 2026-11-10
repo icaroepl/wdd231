@@ -1,0 +1,23 @@
+{
+    "family name": "Lima",
+    "date": "15/07/2027",
+    "family size": 3,
+    "visited by bishopric": true,
+    "member data": [
+        {
+            "name": "Jhon",
+            "sex": "Male",
+            "birthdate": "10/05/1982"
+        },
+        {
+            "name": "Lisa",
+            "sex": "female",
+            "birthdate": "5/08/1989"
+        },
+        {
+            "name": "Anthony",
+            "sex": "Male",
+            "birthdate": "27/09/2015"
+        }
+    ]
+}
