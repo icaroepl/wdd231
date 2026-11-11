@@ -52,7 +52,8 @@ const displayGrid = (members) => {
         // img atributes
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `Image of ${member.name}`);
-        image.setAttribute('loading', 'lazy');
+        image.setAttribute('loading', 'eager');
+        image.setAttribute('fetchpriority', 'high');
         image.setAttribute('width', '300');
         image.setAttribute('height', '300');
 
