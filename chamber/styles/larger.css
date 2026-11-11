@@ -9,6 +9,10 @@
         display: none;
     }
 
+    .navigation {
+        display: block;
+    }
+
     .navigation ul {
         list-style-type: none;
         margin: 0;

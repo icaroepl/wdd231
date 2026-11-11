@@ -36,9 +36,15 @@ header span {
 /* NAVIGATION */
 
 .navigation {
+    display: none;
     grid-column: 1 / -1;
     width: 100%;
     background-color: var(--primary-red);
+}
+
+.navigation.show {
+    display: block;
+    /* ou flex */
 }
 
 .navigation ul {
