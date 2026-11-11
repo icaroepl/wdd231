@@ -1,7 +1,15 @@
 /* color scheme */
 /* terra cotta #E07A5F
 Blue #3D405B */
+:root {
+    --primary-red: rgb(131, 70, 70);
+    --seccondary-color: #868686;
+    --white: #FFFFFF;
+}
+
+
 * {
+
     font-family: Josefin Sans, sans-serif;
     box-sizing: border-box;
 }
@@ -33,7 +41,7 @@ header span {
 .navigation {
     grid-column: 1 / -1;
     width: 100%;
-    background-color: #3D405B;
+    background-color: var(--primary-red);
 }
 
 .navigation ul {
@@ -56,8 +64,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: #E07A5F;
-    color: #fff;
+    background-color: var(--seccondary-color);
 }
 
 
@@ -83,18 +90,20 @@ header span {
 
 /* MAIN */
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
     padding: 1rem;
     color: white;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
+
 
 .cards section {
     background-color: rgb(131, 70, 70);
     border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
 }
 
 .top {
@@ -151,11 +160,28 @@ header span {
     }
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    font-size: large;
+    color: #FFFFFF;
+    background-color: #868686;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+}
+
 /* FOOTER */
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #3D405B;
+    background-color: var(--primary-red);
     padding: 10px;
     color: white;
 }
