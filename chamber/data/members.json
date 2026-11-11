@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Frisa Frigorífico",
+        "addresses": "Av. Eldes Scherrer Souza, 2162 - Colina de Laranjeiras, Serra - ES",
+        "phone": "+55 (27) 3338-1200",
+        "website": "https://www.frisa.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 3,
+        "category": "Indústria de Alimentos",
+        "established": 1968
+    },
+    {
+        "name": "Buaiz Alimentos",
+        "addresses": "TIMS - Terminal Industrial Multimodal da Serra, Serra - ES",
+        "phone": "+55 (27) 3398-4000",
+        "website": "https://www.buaizalimentos.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 3,
+        "category": "Moagem e Massas",
+        "established": 1938
+    },
+    {
+        "name": "Coroa Bebidas",
+        "addresses": "Rod. BR-101, Km 268 - Carapina, Serra - ES",
+        "phone": "+55 (27) 2121-7700",
+        "website": "https://www.coroa.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 2,
+        "category": "Indústria de Bebidas",
+        "established": 1933
+    },
+    {
+        "name": "Nossa Fruta Brasil",
+        "addresses": "Rua E, Quadra 04, Lote 12 - Civit II, Serra - ES",
+        "phone": "+55 (27) 3291-5500",
+        "website": "https://www.nossafrutabrasil.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 2,
+        "category": "Polpas de Frutas e Congelados",
+        "established": 2008
+    },
+    {
+        "name": "Laticínio Kampke",
+        "addresses": "Estrada de Muribeca, S/N - Zona Rural, Serra - ES",
+        "phone": "+55 (27) 3251-1122",
+        "website": "https://www.laticiniokampke.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 1,
+        "category": "Laticínios e Queijos",
+        "established": 1995
+    },
+    {
+        "name": "Padaria e Confeitaria Laranjeiras",
+        "addresses": "Av. Segunda Avenida, 450 - Laranjeiras, Serra - ES",
+        "phone": "+55 (27) 3328-8899",
+        "website": "https://www.padarialaranjeiras.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 1,
+        "category": "Panificação e Confeitaria",
+        "established": 2004
+    },
+    {
+        "name": "Hortifruti Serra Verde",
+        "addresses": "Av. Talma Rodrigues Ribeiro, 1200 - Portal de Jacaraípe, Serra - ES",
+        "phone": "+55 (27) 3243-7744",
+        "website": "https://www.serraverdehorti.com.br",
+        "image": "images/placeholder.webp",
+        "membershipLevel": 2,
+        "category": "Distribuição de Hortifruti",
+        "established": 2012
+    }
+]
