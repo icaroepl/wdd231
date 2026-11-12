@@ -44,7 +44,6 @@ header span {
 
 .navigation.show {
     display: block;
-    /* ou flex */
 }
 
 .navigation ul {

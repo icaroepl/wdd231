@@ -30,10 +30,16 @@ header span {
 /* NAVIGATION */
 
 .navigation {
+    display: none;
     grid-column: 1 / -1;
     width: 100%;
     background-color: #3D405B;
 }
+
+.navigation.show {
+    display: block;
+}
+
 
 .navigation ul {
     list-style-type: none;

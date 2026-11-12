@@ -8,12 +8,5 @@ navbutton.addEventListener('click', () => {
     navlinks.classList.toggle('show');
 });
 
-// toggle the show class of and on
-// navBar.addEventListener('click', () => {
-//     const isOpen = navBar.classList.toggle('show');
-//     navbutton.setAttribute('aria-expanded', isOpen);
-//     navBar.classList.toggle('show');
-// });
-
 
 
