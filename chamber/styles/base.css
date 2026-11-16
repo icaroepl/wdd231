@@ -4,6 +4,7 @@ Blue #3D405B */
 :root {
     --primary-red: rgb(131, 70, 70);
     --seccondary-color: #6b6b6b;
+    --tertiary-color: #e4e4e4;
     --white: #FFFFFF;
 }
 
@@ -91,7 +92,90 @@ header span {
 }
 
 /* MAIN */
-.cards {
+
+/* LANDING */
+
+.hero h1 {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: rgb(131, 70, 70);
+    color: #fff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hero-box {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hero a {
+    display: inline-block;
+    padding: 12px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+    background: var(--primary-red);
+    width: 15%;
+    color: white;
+    text-decoration: none;
+    min-width: 140px;
+}
+
+/* Weather */
+.weather-card {
+    border: 1px solid #2f4441;
+    background-color: #f0f7fc;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 6800px;
+    margin: 30px;
+}
+
+.weather-card h2 {
+    color: #2f4441;
+    margin: .3rem 0;
+}
+
+.weather-card #figcaption {
+    text-transform: capitalize;
+    color: 534e7e;
+    margin: .3rem 0;
+}
+
+.weather-card #current-temp {
+    font-size: 2rem;
+    color: #2f4441;
+    margin: .3rem 0;
+}
+
+.weather-card #future-temp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* CARDS */
+.cards,
+.spotlights {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -101,8 +185,8 @@ header span {
     margin: 10px auto;
 }
 
-
-.cards section {
+.cards section,
+.spotlights section {
     background-color: var(--primary-red);
     border-radius: 10px;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
@@ -126,7 +210,8 @@ header span {
     padding-right: 10px;
 }
 
-.cards img {
+.cards img,
+.spotlights img {
     margin: 0 auto;
     max-width: 130px;
     max-height: 130px;
@@ -159,6 +244,24 @@ header span {
             background-color: var(--seccondary-color);
         }
     }
+}
+
+/* EVENTS */
+
+#bottom-h2 {
+    text-align: center;
+    background-color: var(--primary-red);
+    padding: 15px;
+    color: var(--white);
+}
+
+.event-list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding-left: 50px;
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--seccondary-color);
+    align-items: center;
 }
 
 .menu {

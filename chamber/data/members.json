@@ -5,7 +5,7 @@
         "phone": "+55 (27) 3338-1200",
         "website": "https://www.frisa.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 3,
+        "membershipLevel": "gold",
         "category": "Indústria de Alimentos",
         "established": 1968
     },
@@ -15,7 +15,7 @@
         "phone": "+55 (27) 3398-4000",
         "website": "https://www.buaizalimentos.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 3,
+        "membershipLevel": "gold",
         "category": "Moagem e Massas",
         "established": 1938
     },
@@ -25,7 +25,7 @@
         "phone": "+55 (27) 2121-7700",
         "website": "https://www.coroa.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 2,
+        "membershipLevel": "silver",
         "category": "Indústria de Bebidas",
         "established": 1933
     },
@@ -35,7 +35,7 @@
         "phone": "+55 (27) 3291-5500",
         "website": "https://www.nossafrutabrasil.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 2,
+        "membershipLevel": "silver",
         "category": "Polpas de Frutas e Congelados",
         "established": 2008
     },
@@ -45,7 +45,7 @@
         "phone": "+55 (27) 3251-1122",
         "website": "https://www.laticiniokampke.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 1,
+        "membershipLevel": "bronze",
         "category": "Laticínios e Queijos",
         "established": 1995
     },
@@ -55,7 +55,7 @@
         "phone": "+55 (27) 3328-8899",
         "website": "https://www.padarialaranjeiras.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 1,
+        "membershipLevel": "bronze",
         "category": "Panificação e Confeitaria",
         "established": 2004
     },
@@ -65,7 +65,7 @@
         "phone": "+55 (27) 3243-7744",
         "website": "https://www.serraverdehorti.com.br",
         "image": "images/placeholder.webp",
-        "membershipLevel": 2,
+        "membershipLevel": "silver",
         "category": "Distribuição de Hortifruti",
         "established": 2012
     }

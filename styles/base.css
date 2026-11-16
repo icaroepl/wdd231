@@ -106,9 +106,14 @@ h1 {
     background-color: #e4e4e4;
 }
 
+.middle section p {
+    padding: 10px;
+}
+
 .middle section h2 {
     margin: 0 auto;
 }
+
 
 h2 {
     background-color: #3D405B;

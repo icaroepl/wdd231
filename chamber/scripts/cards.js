@@ -3,27 +3,31 @@ const url = "data/members.json";
 // SELECT THE HTML DIV WITH ID VALUE CARDS
 const cards = document.querySelector('.cards');
 const lists = document.querySelector('.lists');
+const spotlights = document.querySelector('.spotlights')
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#lists");
 
+
 let isGrid = true;
 
-gridbutton.addEventListener("click", () => {
-    displayGrid(allMembers);
-    cards.classList.add("grid");
-    cards.classList.remove("list");
-    isGrid = true;
-});
-listbutton.addEventListener("click", () => {
-    displayList(allMembers);
-    cards.classList.add("list");
-    cards.classList.remove("grid");
-    isGrid = false;
-});
+if (cards != null) {
+    gridbutton.addEventListener("click", () => {
+        displayGrid(allMembers);
+        cards.classList.add("grid");
+        cards.classList.remove("list");
+        isGrid = true;
+    });
+    listbutton.addEventListener("click", () => {
+        displayList(allMembers);
+        cards.classList.add("list");
+        cards.classList.remove("grid");
+        isGrid = false;
+    });
+}
 
 const displayGrid = (members) => {
-    // clean lists
+    // clean
     cards.innerHTML = "";
     members.forEach((member) => {
         // create html parts
@@ -57,7 +61,7 @@ const displayGrid = (members) => {
         image.setAttribute('width', '300');
         image.setAttribute('height', '300');
 
-
+        cards.classList.add("grid");
         card.appendChild(top);
         top.appendChild(Name)
         top.appendChild(category)
@@ -68,13 +72,14 @@ const displayGrid = (members) => {
         info.appendChild(phone);
         info.appendChild(adress);
         cards.appendChild(card);
-
     });
+
 }
 
 const displayList = (members) => {
+    //clean
     cards.innerHTML = "";
-    // clean lists
+
     members.forEach((member) => {
         // create html parts
         const card = document.createElement("section");
@@ -99,6 +104,56 @@ const displayList = (members) => {
     });
 }
 
+const displaySpotlight = (members) => {
+    console.log("Chegou até aqui!");
+    // clean
+    spotlights.innerHTML = "";
+    members.forEach((member) => {
+        // create html parts
+        const card = document.createElement("section");
+        const top = document.createElement("div");
+        const Name = document.createElement("h2");
+        const category = document.createElement("p");
+        const bottom = document.createElement("div");
+        const image = document.createElement("img");
+        const info = document.createElement("div");
+        const website = document.createElement("p");
+        const phone = document.createElement("p");
+        const adress = document.createElement("p");
+
+        // populate heading 
+        Name.textContent = `${member.name}`;
+        category.textContent = `${member.category} , ${member.membershipLevel} member`;
+        // populate info
+        website.textContent = `URL: ${member.website}`;
+        phone.textContent = `Phone: ${member.phone}`;
+        adress.textContent = `Adress:${member.addresses}`;
+
+        top.classList.add("top");
+        bottom.classList.add("bottom");
+
+        // img atributes
+        image.setAttribute("src", member.image);
+        image.setAttribute("alt", `Image of ${member.name}`);
+        image.setAttribute('loading', 'eager');
+        image.setAttribute('fetchpriority', 'high');
+        image.setAttribute('width', '300');
+        image.setAttribute('height', '300');
+
+        card.appendChild(top);
+        top.appendChild(Name)
+        top.appendChild(category)
+        card.appendChild(bottom);
+        bottom.appendChild(image);
+        bottom.appendChild(info);
+        info.appendChild(website);
+        info.appendChild(phone);
+        info.appendChild(adress);
+        spotlights.appendChild(card);
+    });
+
+}
+
 let allMembers = [];
 
 const getCardData = async () => {
@@ -110,11 +165,22 @@ const getCardData = async () => {
         const data = await response.json(); // Wait for the response to be converted to JSON
         // Output the fetched data .log is unorganized
         allMembers = data;
-        if (isGrid) {
-            displayGrid(allMembers)
+
+        const filteredMembers = allMembers.filter((member) => {
+            return member.membershipLevel === "gold" || member.membershipLevel === "silver";
+        });
+        if (spotlights != null) {
+            filteredMembers.sort(() => Math.random() - 0.5);
+            const randomThree = filteredMembers.slice(0, 3);
+            displaySpotlight(randomThree)
         }
-        else {
-            displayList(allMembers)
+        if (cards != null) {
+            if (isGrid) {
+                displayGrid(allMembers)
+            }
+            else {
+                displayList(allMembers)
+            }
         }
     } catch (error) {
         console.error(error);
