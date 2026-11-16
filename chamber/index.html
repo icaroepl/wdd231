@@ -16,8 +16,8 @@
     <script src="scripts/events.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet" media="print"
-        onload="this.media='all'">
+    <link id="google-font" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet"
+        media="print">
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
     </noscript>
@@ -59,20 +59,20 @@
             </div>
         </div>
         <section>
-            <h2 id="bottom-h2">Events</h2>
+            <h2 class="bottom-h2">Events</h2>
             <div id="events"></div>
         </section>
-        <h2 id="bottom-h2">Weather</h2>
+        <h2 class="bottom-h2">Weather</h2>
         <div class="weather-card">
             <h2 id="name"></h2>
             <figure>
-                <img id="weather-icon" src="" alt="" width="100" height="100">
+                <img id="weather-icon" src="" alt="Weather icon">
                 <figcaption id="figcaption"></figcaption>
             </figure>
             <p><span id="current-temp"></span></p>
-            <section class="forecast">
+            <div class="forecast">
                 <div id="future-temp"></div>
-            </section>
+            </div>
         </div>
         <div class="spotlights"></div>
     </main>

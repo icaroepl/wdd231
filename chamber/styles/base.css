@@ -158,7 +158,6 @@ header span {
 
 .weather-card #figcaption {
     text-transform: capitalize;
-    color: 534e7e;
     margin: .3rem 0;
 }
 
@@ -259,7 +258,7 @@ header span {
 
 /* EVENTS */
 
-#bottom-h2 {
+.bottom-h2 {
     text-align: center;
     background-color: var(--primary-red);
     padding: 15px;
