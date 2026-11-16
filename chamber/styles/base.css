@@ -258,6 +258,10 @@ header span {
 
 /* EVENTS */
 
+#events {
+    min-height: 185px;
+}
+
 .bottom-h2 {
     text-align: center;
     background-color: var(--primary-red);

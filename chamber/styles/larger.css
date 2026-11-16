@@ -1,6 +1,10 @@
 @media only screen and (min-width: 50rem) {
 
 
+    #events {
+        min-height: 185px;
+    }
+
     header {
         grid-template-columns: 40px auto 1fr;
     }

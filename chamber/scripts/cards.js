@@ -105,7 +105,6 @@ const displayList = (members) => {
 }
 
 const displaySpotlight = (members) => {
-    console.log("Chegou até aqui!");
     // clean
     spotlights.innerHTML = "";
     members.forEach((member) => {
