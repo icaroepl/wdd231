@@ -162,6 +162,16 @@ header span {
     margin: .3rem 0;
 }
 
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-card img {
+    width: 100px;
+    height: 100px;
+}
+
 .weather-card #current-temp {
     font-size: 2rem;
     color: #2f4441;
