@@ -1,8 +1,8 @@
 @media only screen and (min-width: 50rem) {
 
 
-    .header {
-        grid-template-columns: 24px auto;
+    header {
+        grid-template-columns: 40px auto 1fr;
     }
 
     .hamburger {
