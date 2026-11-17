@@ -42,10 +42,10 @@ const displayGrid = (members) => {
         const phone = document.createElement("p");
         const adress = document.createElement("p");
 
-        // populate heading 
+        // heading 
         Name.textContent = `${member.name}`;
         category.textContent = `${member.category}`;
-        // populate info
+        // info
         website.textContent = `URL: ${member.website}`;
         phone.textContent = `Phone: ${member.phone}`;
         adress.textContent = `Adress:${member.addresses}`;
@@ -53,7 +53,7 @@ const displayGrid = (members) => {
         top.classList.add("top");
         bottom.classList.add("bottom");
 
-        // img atributes
+        // img
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `Image of ${member.name}`);
         image.setAttribute('loading', 'eager');
@@ -81,16 +81,16 @@ const displayList = (members) => {
     cards.innerHTML = "";
 
     members.forEach((member) => {
-        // create html parts
+        //html
         const card = document.createElement("section");
         const name = document.createElement("p");
         const phone = document.createElement("p");
         const adress = document.createElement("p");
         const website = document.createElement("p");
 
-        // populate heading 
+        //heading 
         name.textContent = `${member.name}`;
-        // populate info
+        //info
         website.textContent = `${member.website}`;
         phone.textContent = `${member.phone}`;
         adress.textContent = `${member.addresses}`;
@@ -108,7 +108,7 @@ const displaySpotlight = (members) => {
     // clean
     spotlights.innerHTML = "";
     members.forEach((member) => {
-        // create html parts
+        //html
         const card = document.createElement("section");
         const top = document.createElement("div");
         const Name = document.createElement("h2");
@@ -120,10 +120,10 @@ const displaySpotlight = (members) => {
         const phone = document.createElement("p");
         const adress = document.createElement("p");
 
-        // populate heading 
+        //heading 
         Name.textContent = `${member.name}`;
         category.textContent = `${member.category} , ${member.membershipLevel} member`;
-        // populate info
+        //info
         website.textContent = `URL: ${member.website}`;
         phone.textContent = `Phone: ${member.phone}`;
         adress.textContent = `Adress:${member.addresses}`;
@@ -131,7 +131,7 @@ const displaySpotlight = (members) => {
         top.classList.add("top");
         bottom.classList.add("bottom");
 
-        // img atributes
+        //img
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `Image of ${member.name}`);
         image.setAttribute('loading', 'eager');
@@ -157,12 +157,11 @@ let allMembers = [];
 
 const getCardData = async () => {
     try {
-        const response = await fetch(url); // Wait for the fetch to complete
+        const response = await fetch(url);
         if (!response.ok) {
-            throw new Error(`Request failed with status ${response.status} `); // for example, a 404
+            throw new Error(`Request failed with status ${response.status} `);
         }
-        const data = await response.json(); // Wait for the response to be converted to JSON
-        // Output the fetched data .log is unorganized
+        const data = await response.json();
         allMembers = data;
 
         const filteredMembers = allMembers.filter((member) => {

@@ -1,6 +1,5 @@
 // JSON URL
 const url = 'https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.json';
-// SELECT THE HTML DIV WITH ID VALUE CARDS
 const cards = document.querySelector('#cards');
 
 const displayProphets = (prophets) => {
@@ -11,7 +10,6 @@ const displayProphets = (prophets) => {
         const place = document.createElement("p");
         const date = document.createElement("p");
 
-        // populate heading with full name
         fullName.textContent = `${prophet.name}${prophet.lastname}`;
         date.textContent = `Date of Birth: ${prophet.birthdate}`;
         place.textContent = `Place of birth: ${prophet.birthplace}`;
@@ -33,12 +31,11 @@ const displayProphets = (prophets) => {
 
 const getProphetData = async () => {
     try {
-        const response = await fetch(url); // Wait for the fetch to complete
+        const response = await fetch(url);
         if (!response.ok) {
-            throw new Error(`Request failed with status ${response.status} `); // for example, a 404
+            throw new Error(`Request failed with status ${response.status} `);
         }
-        const data = await response.json(); // Wait for the response to be converted to JSON
-        // console.table(data.prophets); // Output the fetched data .log is unorganized
+        const data = await response.json();
         displayProphets(data.prophets)
     } catch (error) {
         console.error(error);

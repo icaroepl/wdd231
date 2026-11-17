@@ -1,21 +1,15 @@
-// JSON URL
 const dataUrl = "data/events.json";
-// SELECT THE HTML DIV WITH ID VALUE CARDS
 const eventLists = document.querySelector('#events');
 
 const displayEvents = (events) => {
     eventLists.innerHTML = "";
-    // clean lists
     events.forEach((event) => {
-        // create html parts
         const section = document.createElement("section");
         const name = document.createElement("h3");
         const date = document.createElement("p");
         const adress = document.createElement("p");
 
-        // populate heading 
         name.textContent = `${event.name}`;
-        // populate info
         date.textContent = `${event.date}`;
         adress.textContent = `${event.neighborhood}`;
 
@@ -31,12 +25,11 @@ let allEvents = [];
 
 const getEventData = async () => {
     try {
-        const response = await fetch(dataUrl); // Wait for the fetch to complete
+        const response = await fetch(dataUrl);
         if (!response.ok) {
-            throw new Error(`Request failed with status ${response.status} `); // for example, a 404
+            throw new Error(`Request failed with status ${response.status} `);
         }
-        const data = await response.json(); // Wait for the response to be converted to JSON
-        // Output the fetched data .log is unorganized
+        const data = await response.json();
         allEvents = data;
         displayEvents(allEvents)
     } catch (error) {
