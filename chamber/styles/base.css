@@ -369,8 +369,6 @@ label {
     cursor: pointer;
 }
 
-#level-select {}
-
 /* JOIN RIGHT SIDE */
 
 .membership {
@@ -441,6 +439,7 @@ dialog[open] {
 
 #thanks-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     flex-direction: column;
     align-items: center;
