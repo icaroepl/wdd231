@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Icaro Lima Chamber of commerce directory page</title>
+    <title>Serra Chamber of commerce Join page</title>
     <meta name="author" content="Icaro Lima">
     <meta name="description" content="WDD 231 Chamber of commerce directory page with description of commerce points">
     <link rel="stylesheet" href="styles/base.css">
@@ -22,9 +22,9 @@
     </noscript>
     <link rel="icon" href="images/favicon.ico">
     <!-- Social Meta Tags -->
-    <meta property="og:title" content="Icaro Lima - Chamber of Commercec directory">
+    <meta property="og:title" content="Icaro Lima - Chamber of Commerce Join Page">
     <meta property="og:description"
-        content="WDD 231 Chamber of commerce directory page with description of commerce points">
+        content="WDD 231 Chamber of commerce join page with a formulary and membership explanations">
     <meta property="og:url" content="https://icaroepl.github.io/wdd231/">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://icaroepl.github.io/wdd231/images/profile.webp">
@@ -69,13 +69,14 @@
                             title="Your organization description" name="description"></textarea></label>
                     <label>Membership Level
                         <select id="level-select" name="selection" required>
+                            <option value="" disabled selected>Membership Level</option>
                             <option value="non-profit">Non-Profit</option>
                             <option value="bronze">Bronze</option>
                             <option value="silver">Silver</option>
                             <option value="gold">Gold</option>
                         </select>
                     </label>
-                    <p id="current-time"></p>
+                    <input type="hidden" id="timestamp" name="timestamp">
                     <button id="submit-button" type="submit">Send Information</button>
                 </form>
             </section>
@@ -83,19 +84,19 @@
                 <h2>Membership Levels</h2>
                 <div class="membership">
                     <h3>Non Profit Membership Level</h3>
-                    <button class="membership-button" id="non-profit" type="learn-more">Learn More</button>
+                    <button class="membership-button" id="non-profit" type="button">Learn More</button>
                 </div>
                 <div class="membership">
                     <h3>Bronze Membership Level</h3>
-                    <button class="membership-button" type="learn-more">Learn More</button>
+                    <button class="membership-button" type="button">Learn More</button>
                 </div>
                 <div class="membership">
                     <h3>Silver Membership Level</h3>
-                    <button class="membership-button" type="learn-more">Learn More</button>
+                    <button class="membership-button" type="button">Learn More</button>
                 </div>
                 <div class="membership">
                     <h3>Gold Membership Level</h3>
-                    <button class="membership-button" type="learn-more">Learn More</button>
+                    <button class="membership-button" type="button">Learn More</button>
                 </div>
                 <dialog id="membership-modal">
                     <div id="membership-title">
