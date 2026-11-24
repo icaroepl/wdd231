@@ -148,26 +148,68 @@ section div {
 
 }
 
-section div button {
-    padding: 7px;
-}
-
 .courses-grid {
     margin-top: 15px;
-    background-color: #e4e4e4;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
 }
 
-.course-card {
+.course-button,
+section div button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 9px;
     align-items: center;
     text-align: center;
+    background-color: #e4e4e4;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid #ffffff80;
+    border-style: outset;
 }
+
+.course-button:hover,
+section div button:hover {
+    background-color: #cfcfcf;
+}
+
+/* MODAL */
+
+dialog[open] {
+    background-color: beige;
+    border-radius: 5px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    text-align: left;
+    max-width: 500px;
+    padding-top: 0px;
+}
+
+#subject-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#subject {
+    padding: 15px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    padding: 13px;
+    border: none;
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
 
 /* FOOTER */
 footer {

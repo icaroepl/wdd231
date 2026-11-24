@@ -13,6 +13,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/courses.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/memberships.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
@@ -81,9 +82,22 @@
                 <button id="wdd" type="button">WDD</button>
             </div>
             <div id="courses-container" class="courses-grid"></div>
+            <dialog id="signup">
+                <div id="subject-div">
+                    <h2 id="subject">SIGLA</h2>
+                    <button class="close-button">❌</button>
+                </div>
+                <h3 id="title">Course Name</h3>
+                <p id="credits"> x credits</p>
+                <p id="certificate"> Certificate: name</p>
+                <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt praesentium
+                    voluptas vel corporis?
+                    Dignissimos harum laboriosam accusantium aut, ex minima dolore iusto eaque deserunt maxime! Suscipit
+                    magnam autem eaque incidunt.</p>
+                <p id="technology">Technology: Techs here</p>
+            </dialog>
             <p> The total credits for courses listed above is <span id="credits"></span></p>
         </section>
-
     </main>
     <footer>
         <ul>

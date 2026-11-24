@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icaro Lima Chamber of commerce directory page</title>
+    <meta name="author" content="Icaro Lima">
+    <meta name="description" content="WDD 231 Chamber of commerce directory page with description of commerce points">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 50rem)">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/memberships.js" defer></script>
+    <script src="scripts/info.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link id="google-font" href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet"
+        media="print">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Social Meta Tags -->
+    <meta property="og:title" content="Icaro Lima - Chamber of Commercec directory">
+    <meta property="og:description"
+        content="WDD 231 Chamber of commerce directory page with description of commerce points">
+    <meta property="og:url" content="https://icaroepl.github.io/wdd231/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://icaroepl.github.io/wdd231/images/profile.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Icaro Lima chamber of commerce website">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="40" height="40">
+        <span>Icaro Lima</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Chamber</a></li>
+                <li><a href="final.html">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join Us</h1>
+        <div class="form-div">
+            <section>
+                <h2>Membership Application Form</h2>
+                <form method="GET" action="thankyou.html" class="main-form">
+                    <label>First Name <input id="name-input" type="text" name="first" required autocomplete="given-name"
+                            title="Your first name"></label>
+                    <label>Last Name <input id="last-input" type="text" name="last" required autocomplete="family-name"
+                            title="Your last name"></label>
+                    <label>Organizational Title <input id="title-input" type="text" name="organizational-title"
+                            autocomplete="organization-title" title="Title of organization"
+                            pattern="[a-zA-Z -]{7,}"></label>
+                    <label>Email <input id="email-input" type="email" name="email" required autocomplete="email"
+                            title="Your email" placeholder="example@email.com"></label>
+                    <label>Mobile Phone Number <input id="phone-input" type="tel" name="phone" required
+                            autocomplete="tel" title="A phone number with dashes" placeholder="987-555-1234"></label>
+                    <label>Business/Organization's Name <input id="organization-input" type="text"
+                            name="organization-name" required autocomplete="organization"
+                            title="Your organization name"></label>
+                    <label>Business/Organization's Description<textarea id="description"
+                            title="Your organization description" name="description"></textarea></label>
+                    <label>Membership Level
+                        <select id="level-select" name="selection" required>
+                            <option value="non-profit">Non-Profit</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </label>
+                    <p id="current-time"></p>
+                    <button id="submit-button" type="submit">Send Information</button>
+                </form>
+            </section>
+            <section>
+                <h2>Membership Levels</h2>
+                <div class="membership">
+                    <h3>Non Profit Membership Level</h3>
+                    <button class="membership-button" id="non-profit" type="learn-more">Learn More</button>
+                </div>
+                <div class="membership">
+                    <h3>Bronze Membership Level</h3>
+                    <button class="membership-button" type="learn-more">Learn More</button>
+                </div>
+                <div class="membership">
+                    <h3>Silver Membership Level</h3>
+                    <button class="membership-button" type="learn-more">Learn More</button>
+                </div>
+                <div class="membership">
+                    <h3>Gold Membership Level</h3>
+                    <button class="membership-button" type="learn-more">Learn More</button>
+                </div>
+                <dialog id="membership-modal">
+                    <div id="membership-title">
+                        <h2 id="level-name">SIGLA</h2>
+                        <button class="close-button">❌</button>
+                    </div>
+                    <div id="modal-bottom">
+                        <p><strong>Benefits include:</strong></p>
+                        <ul id="benefits"></ul>
+                        <p id="cost"></p>
+                    </div>
+                </dialog>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p><strong>Serra Chamber of Commerce</strong></p>
+            <p>Av. Eldes Scherrer Souza 2162</p>
+            <p>Colina de Laranjeiras, Serra - ES</p>
+            <p>+55 (27)3422-2100</p>
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/icaroepl" target="_blank">
+                    <img src="images/github.svg" alt="GitHub" width="60" height="60">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/icaro-lima-82928239a/" target="_blank">
+                    <img src="images/linkedin.svg" alt="LinkedIn" width="60" height="60">
+                </a>
+            </li>
+        </ul>
+        <div>
+            <p>WDD 231 Class Project</p>
+            <p>Icaro Lima</p>
+            <p class="last-text">©<span id="currentyear"></span> Serra Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
